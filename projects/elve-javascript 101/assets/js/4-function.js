@@ -21,52 +21,52 @@
 
 //This code is WET! Write Everything Twice
 //Eftersträva att er kod är DRY! Don't Repeat Yourself
-function twinkletwinkle(){
-    console.log("blinka lilla tjärna där");
-    console.log("blinka lilla tjärna där");
-    console.log("hur jag undrar var du är");
-    console.log("fjärran lockar du min syn");
-    console.log("likt en diamant i skyn");
-}
+// function twinkletwinkle(){
+//     console.log("blinka lilla tjärna där");
+//     console.log("blinka lilla tjärna där");
+//     console.log("hur jag undrar var du är");
+//     console.log("fjärran lockar du min syn");
+//     console.log("likt en diamant i skyn");
+// }
 
-//Call a function - Kalla/Anropa på fubktionen
-twinkletwinkle();
-twinkletwinkle();
-twinkletwinkle();
+// //Call a function - Kalla/Anropa på fubktionen
+// twinkletwinkle();
+// twinkletwinkle();
+// twinkletwinkle();
 
-//Deklarera en funktion
-function doSomething(){
-    console.log("Hello World");
-    console.log("Do Something");
-} 
-//Anropa funktionen
-doSomething();
+// //Deklarera en funktion
+// function doSomething(){
+//     console.log("Hello World");
+//     console.log("Do Something");
+// } 
+// //Anropa funktionen
+// doSomething();
 
-//Visar innehålet i funktion
-doSomething;
+// //Visar innehålet i funktion
+// doSomething;
 
-//parameter och Argument
+// //parameter och Argument
 
-//Deklarera en funktion med två stycken parameter
-function square(num, num1) {
-    console.log(num * num1);
-}
+// //Deklarera en funktion med två stycken parameter
+// function square(num, num1) {
+//     console.log(num * num1);
+// }
 
-//Anropa funktionen med två stycken argument
-square(5, 6);
+// //Anropa funktionen med två stycken argument
+// square(5, 6);
 
-function sayHello(name){
-    console.log("Well hello there, dear " + name);
-}
+// function sayHello(name){
+//     console.log("Well hello there, dear " + name);
+// }
 
-//Anropar funktion med ett argument, i form ev en string
-sayHello("king");
-sayHello("Greta");
+// //Anropar funktion med ett argument, i form ev en string
+// sayHello("king");
+// sayHello("Greta");
 
-function area(length, height){
-    console.log("The area of: " + length + "and" + height + "is: " + length * height);
-}
-area(5, 10);
+// function area(length, height){
+//     console.log("The area of: " + length + "and" + height + "is: " + length * height);
+// }
+// area(5, 10);
 
 function greet(person1, person2, person3, person4) {
     console.log("Hej, " + person1 +"!") 
@@ -84,3 +84,40 @@ function squared(x){
 console.log("4 squared is: "+ squared(4));
 var result = squared(10);
 console.log(result);
+
+function isEven(x)
+{
+    if (x % 2 == 0) {
+    return true;
+}
+else {
+    return false;
+}}
+console.log(isEven(8));
+
+function kebabToSnake(str) {
+    // Everthing inbetween / /g will replace.
+    var mystring = str.replace(/-/g, "_");// replace make en new copy of the string
+    return mystring;
+}
+
+kebabToSnake("kebab 1");
+console.log(kebabToSnake("k-e-b-a-b-1"));
+
+
+function localScope () {
+    var showScope = 31;
+    console.log(showScope);
+}
+localScope();
+console.log(showScope);
+
+var showScope = "i'm global variabel"; //
+console.log(showScope);
+var showScope = 99; //Global variable
+function localScopeY(){
+    showScopeY= 100;
+    console.log(showScopeY);
+}
+ console.log(showScopeY) //Globle showScopeY
+ localScopeY();
