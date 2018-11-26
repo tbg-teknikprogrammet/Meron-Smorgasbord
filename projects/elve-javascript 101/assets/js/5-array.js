@@ -57,15 +57,50 @@ var fruits = ["Banana", "Orange", "Lemon", "Mango", "Pear"];
 
 //copy the 2nd anda 3rd fruit
 // specify index where the new array starts(1), and ends (3), does not include index 3
-var citrus = fruits.slice(1, 3)
-console.log(citrus);
+// var citrus = fruits.slice(1, 3)
+// console.log(citrus);
 
-var citrus = fruits.slice(fruits)
-console.log(copyFruits);
+// var citrus = fruits.slice(fruits)
+// console.log(copyFruits);
 
 
 
-var cars = ["Audi", "Volvo 940", "Ford Mondeo", "", "", "", "", ""]
-for(var i = 0; i <  cars.length; i++) {
-    console.log(cars[i]);
+// var cars = ["Audi", "Volvo 940", "Ford Mondeo", "", "", "", "", ""]
+// for(var i = 0; i <  cars.length; i++) {
+//     console.log(cars[i]);
+// }
+
+
+// var countries = ["Sweden", "Norway", "Finland", "Denmark", "Island"];
+// countries.forEach(function(country){
+//     console.log(country);
+// });
+
+// function coutryList(country){
+//     console.log("***********");
+//     console.log(country);
+//     console.log("***********");
+//     console.log("");
+// }
+
+// countries.forEach(coutryList);
+
+
+
+
+// function isIndentical(myNumbers) {
+// }
+// console.log();
+
+// printReverse([1,1,1,1,1])
+
+function arraysEqual(arr1) {
+    if(arr1.length !== arr2.length)
+        return false;
+    for(var i = arr1.length; i--;) {
+        if(arr1[i] !== arr2[i])
+            return false;
+    }
+
+    return true;
 }
