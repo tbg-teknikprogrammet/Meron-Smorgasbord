@@ -94,13 +94,15 @@ var fruits = ["Banana", "Orange", "Lemon", "Mango", "Pear"];
 
 // printReverse([1,1,1,1,1])
 
-function arraysEqual(arr1) {
-    if(arr1.length !== arr2.length)
-        return false;
-    for(var i = arr1.length; i--;) {
-        if(arr1[i] !== arr2[i])
-            return false;
-    }
+var sum = [1,5,123,4,2,1].reduce(sumArray, 0);
 
-    return true;
+function sumArray(a, b) {
+    return a + b;
 }
+
+console.log(sum);
+
+
+
+
+
