@@ -85,22 +85,32 @@ var fruits = ["Banana", "Orange", "Lemon", "Mango", "Pear"];
 
 // countries.forEach(coutryList);
 
+var myNumbers = [1,1,1,1,1]
+
+function isIndentical(myNumbers) {
+    // ta reda på värdet i arrayen på index 0
+    // jämför de andra värdena med index 0
+    // om något värde skiljer sig från index 0 return false
+    // om alla stämmer return true
+    // var myNumbers = myNumbers.length;
+    //  return true;
+    //  if( myNumbers != myNumbers)
+    //  return false;
 
 
-
-// function isIndentical(myNumbers) {
-// }
-// console.log();
-
-// printReverse([1,1,1,1,1])
-
-var sum = [1,5,123,4,2,1].reduce(sumArray, 0);
-
-function sumArray(a, b) {
-    return a + b;
 }
+console.log(myNumbers.length);
+// isIndentical(myNumbers);
 
-console.log(sum);
+
+
+// var sum = [1,5,123,4,2,1].reduce(sumArray, 0);
+
+// function sumArray(a, b) {
+//     return a + b;
+// }
+
+// console.log(sum);
 
 
 
